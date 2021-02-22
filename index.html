@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma-rtl.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Previsão do Tempo</title>
+</head>
+<body>
+  <p class="title is-1 is-spaced">Clima</p>
+
+  <div class="conteudo">
+    <div class="options-localization">
+      <p class="subtitle is-4">Cidade</p>
+      <input id="city" class="input is-rounded" type="text" placeholder="Cidade">
+      
+      <p class="subtitle is-4">Estado</p>
+      <input id="state" class="input is-rounded" type="text" placeholder="Estado">
+      
+      <p class="subtitle is-4">País</p>
+      <input id="country" class="input is-rounded" type="text" placeholder="País">
+
+      <button class="button is-info is-rounded" onclick="customWeather()" >Buscar</button>
+    </div>
+    <section class="section">
+      <div class="box">
+      <figure class="image is-128x128">
+        <img class="is-rounded" >
+      </figure>
+        <p class="title is-1"></p>
+        <p class="subtitle is-3"></p>
+      </div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
